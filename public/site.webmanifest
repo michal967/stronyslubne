@@ -1,0 +1,10 @@
+{
+  "name": "Wedding Studio",
+  "short_name": "Wedding Studio",
+  "icons": [
+    { "src": "/favicon.svg", "sizes": "any", "type": "image/svg+xml" }
+  ],
+  "theme_color": "#0f0e0d",
+  "background_color": "#0f0e0d",
+  "display": "standalone"
+}
