@@ -76,6 +76,8 @@ const config = {
     ['Zaproszenie & Hero', 'Eleganckie powitanie z imionami, datą i miejscem.'],
     ['Odliczanie', 'Licznik dni, godzin, minut i sekund do ślubu.'],
     ['Plan dnia', 'Harmonogram ceremonii i przyjęcia w formie osi czasu.'],
+    ['Galeria zdjęć', 'Nowoczesna galeria waszych zdjęć.'],
+    ['Wasza historia', 'Sekcja z Waszą historią, jak się poznaliście, oświadczyny'],
     ['Mapy Google', 'Osadzone mapy kościoła i sali weselnej.'],
     ['RSVP (Tally)', 'Formularz potwierdzenia obecności – gotowy do podpięcia.'],
     ['Powiadomienia email', 'Automatyczne wiadomości email z potwierdzeniem obecności.'],
