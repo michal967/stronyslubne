@@ -73,7 +73,6 @@ const config = {
   oferta: [
     ['Responsywność', 'Układ i wielkość elementów dostosowują się do każdego ekranu – od smartfona po monitor.'],
     ['Wasza własna domena', 'Profesjonalny adres www z Waszymi imionami.'],
-    ['Odliczanie', 'Licznik dni, godzin, minut i sekund do ślubu.'],
     ['Zaproszenie & Hero', 'Eleganckie powitanie z imionami, datą i miejscem.'],
     ['Odliczanie', 'Licznik dni, godzin, minut i sekund do ślubu.'],
     ['Plan dnia', 'Harmonogram ceremonii i przyjęcia w formie osi czasu.'],
