@@ -1,38 +1,26 @@
 import React from 'react';
 import { ArrowUpRight, Heart, Sparkles, Mail, Phone, Instagram, Facebook, MessageCircle, MapPin } from 'lucide-react';
 
-// 1. ZDJĘCIA PODGLĄDOWE – wszystkie zdjęcia są w folderze src/images/
-//    Możesz podmienić pliki o tych samych nazwach (lub zmienić ścieżki poniżej)
 import tileKlasyczna from './images/tile-klasyczna.jpg';
 import tileBoho from './images/tile-boho.jpg';
 import tileRomantyczna from './images/tile-romantyczna.jpg';
 import tileMinimalistyczna from './images/tile-minimalistyczna.jpg';
 
-// ==========================================
-// KONFIGURACJA PORTFOLIO
-// Wpisz linki do swoich opublikowanych stron (Vercel)
-// ==========================================
+
 const config = {
   studio: {
-    nazwa: 'Wedding Studio',
-    cytat: 'Cztery style. Jedna miłość.',
+    nazwa: 'Strona Ślubna',
+    cytat: 'Wiele styli. Jedna miłość.',
   },
 
-  // === KONTAKT ===
-  // Tu wpisz swoje dane kontaktowe (klienci zobaczą je w sekcji "Kontakt")
+
   kontakt: {
     naglowek: 'Skontaktuj się ze mną',
     podtytul: 'Porozmawiajmy o Waszej wymarzonej stronie ślubnej',
-    opis: 'Odpowiadam zwykle w ciągu 24 godzin. Możesz napisać maila, zadzwonić lub skorzystać z formularza poniżej.',
-    email: 'kontakt@twojestudio.pl',
-    tel: '+48 500 000 000',
-    telDisplay: '500 000 000',
-    miasto: 'Warszawa, Polska',
-    instagram: 'https://instagram.com/twojestudio',
-    instagramDisplay: '@twojestudio',
-    facebook: 'https://facebook.com/twojestudio',
-    whatsapp: 'https://wa.me/48500000000', // numer w formacie +48..., bez plusa
-    // Formularz Tally do "kontakt z nami" (zostaw pusty string '' jeśli nie chcesz formularza)
+    opis: 'Odpowiadam zwykle w ciągu 24 godzin. Chętnie pomogę dobrać wariant idealny dla Was i odpowiem na wszystkie pytania.',
+    email: 'kontakt.strona.slubna@gmail.com',
+    tel: '+48 511 779 350',
+    telDisplay: '511 779 350',
     tallyFormId: '',
   },
 
@@ -83,14 +71,17 @@ const config = {
     },
   ],
   oferta: [
+    ['Responsywność', 'Układ i wielkość elementów dostosowują się do każdego ekranu – od smartfona po monitor.'],
     ['Zaproszenie & Hero', 'Eleganckie powitanie z imionami, datą i miejscem.'],
     ['Odliczanie', 'Licznik dni, godzin, minut i sekund do ślubu.'],
     ['Plan dnia', 'Harmonogram ceremonii i przyjęcia w formie osi czasu.'],
     ['Mapy Google', 'Osadzone mapy kościoła i sali weselnej.'],
     ['RSVP (Tally)', 'Formularz potwierdzenia obecności – gotowy do podpięcia.'],
-    ['FAQ', 'Najczęściej zadawane pytania w formie akordeonu.'],
+    ['Powiadomienia email', 'Automatyczne wiadomości email z potwierdzeniem obecności.'],
+    ['FAQ', 'Najczęściej zadawane pytania.'],
     ['Kontakt', 'Dane kontaktowe Pary Młodej.'],
-    ['Plik config.js', 'Wszystkie dane w jednym miejscu – łatwa edycja.'],
+    ['Hotele', 'Rekomendowane hotele w okolicach sali weselnej.'],
+    ['Masz inny pomysł?', 'Napisz do mnie – chętnie przygotuję indywidualną wycenę!'],
   ],
 };
 
@@ -114,10 +105,10 @@ export default function App() {
           <Sparkles size={14} /> Portfolio stron ślubnych
         </div>
         <h1 style={{ fontFamily: "'Cormorant Garamond', serif", fontSize: 'clamp(48px, 7vw, 96px)', fontWeight: 400, lineHeight: 1.05, margin: 0 }}>
-          Cztery style. <span style={{ fontStyle: 'italic', color: '#c8a96a' }}>Jedna miłość.</span>
+          Wiele styli. <span style={{ fontStyle: 'italic', color: '#c8a96a' }}>Jedna miłość.</span>
         </h1>
         <p style={{ marginTop: 24, fontSize: 17, color: '#b7b0a3', maxWidth: 640, margin: '24px auto 0', lineHeight: 1.7 }}>
-          Gotowe szablony stron ślubnych – każdy w innym, niepowtarzalnym stylu. Wybierz ten, który najlepiej opowiada Waszą historię.
+          Personalizowane strony ślubne – każda w innym, niepowtarzalnym stylu. Wybierz ten, który najlepiej opowiada Waszą historię.
         </p>
       </section>
 
@@ -158,7 +149,7 @@ export default function App() {
 
       <section id="oferta" style={{ padding: '80px 48px', background: '#15130f', borderTop: '1px solid #2a2724' }}>
         <div style={{ maxWidth: 1100, margin: '0 auto', textAlign: 'center' }}>
-          <div style={{ fontSize: 12, letterSpacing: 4, textTransform: 'uppercase', color: '#c8a96a', marginBottom: 16 }}>Co znajdziesz w każdym szablonie</div>
+          <div style={{ fontSize: 12, letterSpacing: 4, textTransform: 'uppercase', color: '#c8a96a', marginBottom: 16 }}>Przykładowe funkcjonalności</div>
           <h2 style={{ fontFamily: "'Cormorant Garamond', serif", fontSize: 'clamp(32px, 4vw, 52px)', fontWeight: 400, margin: '0 0 48px' }}>
             Kompletne rozwiązanie dla Waszego <em style={{ color: '#c8a96a' }}>dnia</em>
           </h2>
@@ -200,16 +191,6 @@ export default function App() {
               <div style={{ fontSize: 11, letterSpacing: 3, textTransform: 'uppercase', color: '#7a7268', marginBottom: 6 }}>Telefon</div>
               <div style={{ color: '#ece8e1', fontSize: 15 }}>{config.kontakt.telDisplay}</div>
             </a>
-            <a href={config.kontakt.whatsapp} target="_blank" rel="noreferrer" className="kontakt-card" style={kontaktCardStyle}>
-              <MessageCircle size={22} style={{ color: '#c8a96a', marginBottom: 12 }} />
-              <div style={{ fontSize: 11, letterSpacing: 3, textTransform: 'uppercase', color: '#7a7268', marginBottom: 6 }}>WhatsApp</div>
-              <div style={{ color: '#ece8e1', fontSize: 15 }}>Napisz na WhatsApp</div>
-            </a>
-            <div className="kontakt-card" style={{ ...kontaktCardStyle, cursor: 'default' }}>
-              <MapPin size={22} style={{ color: '#c8a96a', marginBottom: 12 }} />
-              <div style={{ fontSize: 11, letterSpacing: 3, textTransform: 'uppercase', color: '#7a7268', marginBottom: 6 }}>Lokalizacja</div>
-              <div style={{ color: '#ece8e1', fontSize: 15 }}>{config.kontakt.miasto}</div>
-            </div>
           </div>
 
           {/* Social */}

@@ -1,6 +1,6 @@
 {
-  "name": "Wedding Studio",
-  "short_name": "Wedding Studio",
+  "name": "Strona Ślubna",
+  "short_name": "Strona Ślubna",
   "icons": [
     { "src": "/favicon.svg", "sizes": "any", "type": "image/svg+xml" }
   ],
